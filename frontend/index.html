@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ISU Corp - Coding exercise</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body class="bg-light">
+		<div class="container mt-5">
+			<h1 class="text-center mb-4">User Dashboard</h1>
+
+			<!-- Search by ID -->
+			<div id="search-container" class="mb-4">
+				<div class="input-group">
+					<input type="number" id="user-id-input" class="form-control" placeholder="Enter user ID" />
+					<button id="search-button" class="btn btn-primary">Search</button>
+				</div>
+			</div>
+
+			<!-- User by ID result -->
+			<div id="user-result" class="alert alert-info d-none"></div>
+
+			<!-- Users List Table -->
+			<h2 class="mt-4">Users List</h2>
+			<table class="table table-hover" id="user-table">
+				<thead class="table-primary">
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+					</tr>
+				</thead>
+				<tbody id="user-list">
+					<!-- Users container result -->
+				</tbody>
+			</table>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
